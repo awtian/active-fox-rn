@@ -1,15 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
-import TodoScreen from './screens/TodoScreen'
+
+import RootNavigation from './navigations/RootNavigator'
 
 export default class App extends React.Component {
   render() {
     return (
-      <SafeAreaView style={styles.container}>
-        {/* <View style={styles.container}> */}
-          <TodoScreen />
-        {/* </View> */}
-      </SafeAreaView>
+      <RootNavigation />
     );
   }
 }

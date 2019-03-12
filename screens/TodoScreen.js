@@ -8,6 +8,10 @@ import { Text,
  } from 'react-native'
 
 export default class TodoScreen extends Component {
+  static navigationOptions = () => ({
+    title: 'Todo'
+  });
+
   state = {
     todos : ['Bangun', 'Mandi'],
     newTodo: ''
