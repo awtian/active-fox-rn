@@ -10,14 +10,18 @@ import StackNav from './DummyNavigator'
 
 // Screens
 import AboutScreen from "../screens/AboutScreen";
+import GraphQLScreen from "../screens/GraphQLScreen";
 
-const RootNav = createDrawerNavigator({
+const RootNav = createBottomTabNavigator({
   About: {
     screen: AboutScreen
   },
+  GraphQL: {
+    screen: GraphQLScreen
+  },
   Todo: StackNav,
 }, {
-  initialRouteName: 'About',
+  initialRouteName: 'GraphQL',
   defaultNavigationOptions: {
     title: 'Active Fox'
   }

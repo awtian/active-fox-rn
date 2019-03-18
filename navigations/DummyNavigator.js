@@ -6,13 +6,20 @@ import {
 // Screens
 import TodoScreen from "../screens/TodoScreen";
 import JanuarScreen from "../screens/JanuarScreen";
+import DotaScreen from "../screens/DotaScreen";
 
 export default createStackNavigator({
   Todo: {
     screen: TodoScreen
   },
   Dummy: {
-    screen: JanuarScreen
+    screen: JanuarScreen,
+    navigationOptions: {
+      header: null,
+    }
+  },
+  Doto: {
+    screen: DotaScreen
   }
 }, {
   initialRouteName: 'Dummy',

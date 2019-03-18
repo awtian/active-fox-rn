@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
-import { Text, View, Button } from 'react-native'
+import { Text, SafeAreaView, Button } from 'react-native'
 
 export default class JanuarScreen extends Component {
   render() {
     return (
-      <View>
+      <SafeAreaView>
         <Text> Hai, Aku Clinton </Text>
         <Button 
           title="Todo"
           onPress={() => this.props.navigation.navigate('Todo')}
         />
-      </View>
+        <Button 
+          title="Doto"
+          onPress={() => this.props.navigation.navigate('Doto')}
+        />
+      </SafeAreaView>
     )
   }
 }
